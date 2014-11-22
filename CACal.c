@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-
+float insert();
 void main()
 {
 	String name;
@@ -16,16 +16,31 @@ void main()
 
 float insert()
 {
-	int ca1,ca2,ca3;
-	printf("Enter the Marks CA1 :");
-	scanf("%d",&ca1);
+	float ca,i;
+	for(int i=1;i<=3;i++)
+	{
+		scanf("%d",&ca[i]);
 	
-	
-	printf("Enter the Marks CA2 :");
-	scanf("%d",&ca2);
-	
-	
-	printf("Enter the Marks CA3 :");
-	scanf("%d",&ca3);
+	}
+}
 
+float check()
+{
+	int temp,i,j;
+	for(i=1;i<=3;i++)
+	{
+		for(j=1;j<=3;j++)
+		{
+			if(ca[i]>ca[j])
+			{
+				temp=ca[i];
+				ca[i]=ca[j];
+				ca[j]=temp
+			}
+		}
+		for(k=1;k<=2;k++)
+		{
+			printf("%f",ca[i]);
+		}
+	}
 }
