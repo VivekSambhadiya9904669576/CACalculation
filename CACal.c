@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 float insert();
+float best();
+float check();
 void main()
 {
 	String name;
@@ -11,6 +13,8 @@ void main()
 	scanf("%s",&name);
 
 	insert();
+	check();
+	best();
 	getch();
 }
 
@@ -43,4 +47,15 @@ float check()
 			printf("%f",ca[i]);
 		}
 	}
+}
+
+float best()
+{
+		for(k=1;k<=2;k++)
+		{
+			sum=sum+ca[k];
+			consider=sum/3;
+			printf("%f",consider);
+		}
+	
 }
